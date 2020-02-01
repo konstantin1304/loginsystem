@@ -1,0 +1,23 @@
+.EditorCard {
+    height: 4rem;
+    border: 1px solid gray;
+}
+
+.EditorCard__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.EditorCard__name-content {
+
+}
+
+.EditorCard__change-btn {
+
+}
+
+/* дщд */
+
+

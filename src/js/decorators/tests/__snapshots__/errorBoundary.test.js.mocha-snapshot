@@ -1,0 +1,93 @@
+exports["errorBoundary should render correctly(0)"] = {
+  "node": {
+    "nodeType": "function",
+    "props": {
+      "children": {
+        "type": "ComposedComponent",
+        "props": {},
+        "_store": {}
+      }
+    },
+    "rendered": {
+      "nodeType": "function",
+      "type": "ComposedComponent",
+      "props": {}
+    }
+  },
+  "type": "Fragment",
+  "props": {},
+  "children": [
+    {
+      "node": {
+        "nodeType": "function",
+        "type": "ComposedComponent",
+        "props": {}
+      },
+      "type": "ComposedComponent",
+      "props": {}
+    }
+  ]
+};
+
+exports["errorBoundary decorator/errorBoundary should render correctly(0)"] = {
+  "node": {
+    "nodeType": "function",
+    "props": {
+      "children": {
+        "type": "ComposedComponent",
+        "props": {},
+        "_store": {}
+      }
+    },
+    "rendered": {
+      "nodeType": "function",
+      "type": "ComposedComponent",
+      "props": {}
+    }
+  },
+  "type": "Fragment",
+  "props": {},
+  "children": [
+    {
+      "node": {
+        "nodeType": "function",
+        "type": "ComposedComponent",
+        "props": {}
+      },
+      "type": "ComposedComponent",
+      "props": {}
+    }
+  ]
+};
+
+exports["snapshot should render correctly(0)"] = {
+  "node": {
+    "nodeType": "function",
+    "props": {
+      "children": {
+        "type": "ComposedComponent",
+        "props": {},
+        "_store": {}
+      }
+    },
+    "rendered": {
+      "nodeType": "function",
+      "type": "ComposedComponent",
+      "props": {}
+    }
+  },
+  "type": "Fragment",
+  "props": {},
+  "children": [
+    {
+      "node": {
+        "nodeType": "function",
+        "type": "ComposedComponent",
+        "props": {}
+      },
+      "type": "ComposedComponent",
+      "props": {}
+    }
+  ]
+};
+

@@ -1,0 +1,50 @@
+
+
+.main_window {
+    min-width: 450px;
+    max-width: 100%;
+    height: 550px;
+    margin: 20px auto;
+    display: table;
+    border: 2px solid rgba(187, 187, 187, 0.58);
+    border-radius: 6px;
+}
+
+.buttons {
+    width: 450px;
+    min-height: 92px;
+    margin: 0 auto;
+    border: 1px solid #7b7b7b;
+    border-radius: 3px;
+}
+
+
+.main__btn {
+    width: 180px;
+    height: 50px;
+    float: left;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+.main__btn:hover:not(.active):not(.logout_btn) {
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+.active {
+    background-color: #d5d5d5;
+}
+
+.logout_btn {
+    height: 50px;
+    width: 86px;
+    color: white;
+    float: left;
+    margin-left: 2px;
+    background: tomato;
+    border-radius: 0;
+}
+
+.logout_btn:hover {
+    background-color: #e25d40;
+}

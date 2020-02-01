@@ -1,0 +1,36 @@
+.change-item, .button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    margin-top: 20px;
+}
+
+.change {
+    height: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.change-item__label {
+    width: 150px;
+}
+
+.change-item__textarea {
+    padding-left: 10px;
+}
+
+.button-group button {
+    width: 130px;
+    padding: 5px 0;
+}
+
+textarea {
+    width: 150px;
+    height: 100px;
+}

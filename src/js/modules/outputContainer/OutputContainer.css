@@ -1,0 +1,46 @@
+.OutputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Navigation {
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.Navigation__tag {
+    padding-top: 6px;
+    text-align: center;
+    background: gainsboro;
+    width: 40%;
+}
+
+.Navigation__tag:first-child {
+    border-radius: 6px 0 0;
+}
+.Navigation__tag:last-child {
+    border-radius: 0 6px 0 0;
+}
+
+
+.Navigation__tag.active {
+    padding-top: 6px;
+    text-align: center;
+    background: darkgray;
+    width: 40%;
+}
+
+.Navigation__tag.logout {
+    padding-top: 6px;
+    text-align: center;
+    background: orangered;
+    color: white;
+    width: 20%;
+    text-decoration: none;
+}
+
+.Content {
+
+}

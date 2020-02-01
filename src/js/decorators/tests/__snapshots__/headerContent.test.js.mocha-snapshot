@@ -1,0 +1,12 @@
+exports["errorBoundary should render correctly(0)"] = {
+  "node": "WrapperComponent",
+  "type": "Component",
+  "props": {}
+};
+
+exports["create snapshot HeaderContent decorator/errorBoundary should render correctly(0)"] = {
+  "node": "WrapperComponent",
+  "type": "Component",
+  "props": {}
+};
+

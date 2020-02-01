@@ -1,0 +1,50 @@
+.form-group {
+    padding: 15px;
+    text-align: center;
+}
+.flex-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.flex-item {
+    width: 50%;
+    margin-right: 15px;
+}
+.modal__header {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.btn-close {
+    border: none;
+    background: transparent;
+}
+.btn-close:hover {
+    cursor: pointer;
+}
+.btn-close--big {
+    width: 150px;
+    background:tomato;
+    color:#fff;
+}
+.btn__container {
+    text-align: center;
+    margin-top: 30px;
+}
+.icon-close {
+    font-size: 24px;
+}
+.modal__button {
+    margin: 0;
+}
+.form-group .alert.alert-danger {
+    margin-top: 15px;
+}

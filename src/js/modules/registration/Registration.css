@@ -1,0 +1,15 @@
+.form-group {
+    padding: 15px;
+}
+
+label {
+    padding-top: 20px;
+}
+
+.btn-primary {
+    margin-left: 170px;
+    margin-top: 75px;
+}
+.form-group .alert.alert-danger {
+    margin-top: 15px;
+}
