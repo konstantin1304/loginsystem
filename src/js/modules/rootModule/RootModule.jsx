@@ -11,9 +11,9 @@ import { MainWindow } from './styleRoot';
     state = {
         auth: {
             isAuth: false,
-            userName: undefined,
-            password: undefined,
-            error: undefined,
+            userName: '',
+            password: '',
+            error: '',
         },
     };
 
@@ -56,9 +56,9 @@ import { MainWindow } from './styleRoot';
         this.setState({
             auth: {
                 isAuth: false,
-                userName: undefined,
-                password: undefined,
-                error: undefined,
+                userName: '',
+                password: '',
+                error: '',
             },
         });
         localStorage.removeItem('isAuth');

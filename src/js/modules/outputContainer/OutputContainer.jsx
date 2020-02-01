@@ -19,6 +19,7 @@ class OutputContainer extends PureComponent {
         getAllUsers: PropTypes.func.isRequired,
         getInitData: PropTypes.func.isRequired,
         logout: PropTypes.func.isRequired,
+
     };
 
     state = {

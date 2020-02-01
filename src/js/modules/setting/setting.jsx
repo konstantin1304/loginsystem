@@ -4,7 +4,7 @@ import PureComponent from '../../base/PureComponent.jsx';
 import Modal from 'react-modal';
 import './setting.css';
 
-import {ModalHeader, BtnClose, IconClose, FormGroup, FlexContainer, BtnContainer, FlexItem} from './styoleSetting';
+import {ModalHeader, BtnClose, IconClose, FormGroup, FlexContainer, BtnContainer} from './styoleSetting';
 import {addNewField, updateField} from '../actions/fieldsActions';
 
 const customStyles = {
@@ -20,13 +20,14 @@ const customStyles = {
 };
 
 Modal.setAppElement('#modal');
+
 class Setting extends PureComponent {
     addingFieldInput = React.createRef();
     oldFieldInput = React.createRef();
     newFieldInput = React.createRef();
     handlerSetFieldOnVersion = (e) => {
         e.preventDefault();
-        const { setNewField } = this.props;
+        const {setNewField} = this.props;
         const request = {
             type: 'insertItem',
             button: 'addItem',
@@ -37,7 +38,7 @@ class Setting extends PureComponent {
 
     handlerSetAllFields = (e) => {
         e.preventDefault();
-        const { setNewField } = this.props;
+        const {setNewField} = this.props;
         const request = {
             type: 'insertItem',
             button: 'addEverywhere',
@@ -47,7 +48,7 @@ class Setting extends PureComponent {
     };
 
     handlerUpdateField = (e) => {
-        const { changeFieldName } = this.props;
+        const {changeFieldName} = this.props;
         e.preventDefault();
         const request = {
             type: 'updateItem',
@@ -62,7 +63,7 @@ class Setting extends PureComponent {
 
     handlerUpdateAllFields = (e) => {
         e.preventDefault();
-        const { setNewField } = this.props;
+        const {setNewField} = this.props;
         const request = {
             type: 'updateItem',
             button: 'addEverywhere',
@@ -71,16 +72,14 @@ class Setting extends PureComponent {
                 newItem: this.newFieldInput.current.value,
             }
         };
-        debugger;
         setNewField(request);
     };
 
     render() {
-        const {onLabelChangeSettingAdd, clickUpdateItem, addItem, isOpen, closeModal, changeOldItem, changeNewItem} = this.props;
+        const {isOpen, closeModal} = this.props;
         return (
             <Modal
                 isOpen={isOpen}
-                onAfterOpen={() => console.log('Open modal Window')}
                 onRequestClose={this.closeModal}
                 style={customStyles}
                 contentLabel='Modal Window'
@@ -95,23 +94,31 @@ class Setting extends PureComponent {
                         <label>Add Field</label>
                         <input ref={this.addingFieldInput} className='form-control' type='text'/>
                         <FlexContainer>
-                            <button className='btn btn-primary modal__button' onClick={this.handlerSetFieldOnVersion}>add to current env</button>
-                            <button className='btn btn-primary modal__button'  onClick={this.handlerSetAllFields}>add everywhere</button>
+                            <button className='btn btn-primary modal__button'
+                                    onClick={this.handlerSetFieldOnVersion}>add to current env
+                            </button>
+                            <button className='btn btn-primary modal__button' onClick={this.handlerSetAllFields}>add
+                                everywhere
+                            </button>
                         </FlexContainer>
                     </form>
 
                     <form>
                         <label>Edit field</label>
                         <FlexContainer>
-                            <input ref={this.oldFieldInput} className='form-control flex-item' type='text' name='oldItem'
-                                   />
-                            <input ref={this.newFieldInput} className='form-control flex-item' type='text' name='newItem'
-                                  />
+                            <input ref={this.oldFieldInput} className='form-control flex-item' type='text'
+                                   name='oldItem'
+                            />
+                            <input ref={this.newFieldInput} className='form-control flex-item' type='text'
+                                   name='newItem'
+                            />
                         </FlexContainer>
                         <FlexContainer>
-                            <button className='btn btn-primary modal__button'  onClick={this.handlerUpdateField} >add to current env
+                            <button className='btn btn-primary modal__button' onClick={this.handlerUpdateField}>add to
+                                current env
                             </button>
-                            <button className='btn btn-primary modal__button'  onClick={this.handlerUpdateAllFields} >add everywhere
+                            <button className='btn btn-primary modal__button' onClick={this.handlerUpdateAllFields}>add
+                                everywhere
                             </button>
                         </FlexContainer>
                     </form>
